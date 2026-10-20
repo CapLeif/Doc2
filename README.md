@@ -58,5 +58,13 @@ The FL arrow contract uses the local generating code associated with `FL_lambdaJ
 
 `SKILL.md` routes future Doc2 figure and diagnostics tasks to the relevant documents and code. Keep shared symbols, units, provenance, and applicability here in this README; keep topic rules in their one topic document. When changing a convention, update its topic document, this shared index if needed, and the corresponding core implementation together.
 
-This public repository excludes source/intermediate data, generated figure batches, machine-specific paths, and full dataset-specific run scripts. Version history is the change record; no separate release version is asserted yet.
+This public repository excludes source/intermediate data and generated figure batches. It includes the selected portable Python workflow scripts under `local-project-workflows/`; those still require local model inputs. Other dataset-specific run scripts remain local. Version history is the change record; no separate release version is asserted yet.
+
+## MITgcm LLC4320 companion workflows
+
+- `local-project-workflows/docs/day40-fl01-figure-spec.md` records the approved Python Kuroshio FL01 figure and FL02–FL50 batch contract from the referenced conversation.
+- `local-project-workflows/docs/mitgcm-llc4320-processing-flow.md` documents the local project’s MITgcm LLC4320 processing routes.
+- Each workflow has an independently installable Skill under `local-project-workflows/skills/`, including its references and required Python scripts.
+
+These Python Kuroshio/LLC4320 workflows are separate from the MATLAB `εγθ_NewFL` contract in `front.md`; do not merge their thresholds or export settings.
 
