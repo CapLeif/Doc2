@@ -23,3 +23,12 @@ Treat MATLAB files as reference implementations with caller-supplied arrays and 
 
 When a requested plot is not covered by these references, identify the nearest documented convention and state any new choice clearly instead of presenting it as an established Doc2 rule. Update the relevant document and code when the project adopts a new shared convention.
 
+
+
+## MITgcm LLC4320 companion workflows
+
+For the Python Kuroshio FL01 figure and its batch convention, read `local-project-workflows/docs/day40-fl01-figure-spec.md` and use `local-project-workflows/skills/doc2-day40-fl-figure/`.
+
+For the broader MITgcm LLC4320 processing flow, read `local-project-workflows/docs/mitgcm-llc4320-processing-flow.md` and use `local-project-workflows/skills/mitgcm-llc4320-processing/`.
+
+These Skills are separate from the MATLAB Doc2 workflows above. Each includes its supporting reference and Python source; model datasets remain external.
