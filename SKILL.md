@@ -10,7 +10,7 @@ Use this repository as the canonical project reference for Doc2-related scientif
 ## Route by task
 
 - Variable definitions and identities: `vars.md`, then `code/vars/`.
-- VGL names, criteria, or flow-region filtering: `part.md`, then `code/part/`. Do not infer unconfirmed numeric IDs.
+- VGL names, criteria, or flow-region filtering: read `part.md` and use its explicit IDs 0–5 mapping (VL, LL, LG, GL, GG, VG). For real eigenpairs, G is the negative/Genesis mode and L the positive/Lysis mode; in mixed-sign regions the dominant absolute eigenvalue determines the first letter. Confirm that the saved partition array uses this encoding.
 - λ-JPDF: `jpdf.md`, then `code/jpdf/`.
 - Parameter maps and filtering: `field.md`, then `code/field/`. A base/domain/non-SD mask must come from the authoritative workflow; `field_filter_mask` applies only finite, Ro, and λ₋/f filters.
 - Front extraction or eigenvector arrows: `front.md`, then `code/front/`.

@@ -48,14 +48,15 @@ for k=1:n
     theta(k)=acosd(max(-1,min(1,-zet/sig)));
     vminus=V(:,1)/norm(V(:,1)); gradb=[bx(k);by(k)]; gradb=gradb/norm(gradb);
     epsilon(k)=acosd(max(0,min(1,abs(dot(vminus,gradb)))));
+    % Real-eigenvalue SD classes use the current project labels.
     if ev(1)>0
-        className(k)="Ds+";
+        className(k)="LL";
     elseif ev(2)<0
-        className(k)="Cs-";
-    elseif ev(2)>0 && abs(ev(2))>abs(ev(1))
-        className(k)="Sd-";
-    elseif ev(2)>0 && abs(ev(1))>abs(ev(2))
-        className(k)="Sc-";
+        className(k)="GG";
+    elseif ev(1)<0 && ev(2)>0 && abs(ev(2))>abs(ev(1))
+        className(k)="LG";
+    elseif ev(1)<0 && ev(2)>0 && abs(ev(1))>abs(ev(2))
+        className(k)="GL";
     else
         className(k)="boundary";
     end

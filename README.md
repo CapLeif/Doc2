@@ -16,7 +16,7 @@ Cloud reference for Doc2 variables, algorithms, MATLAB implementations, and figu
 
 | Short name | Meaning |
 |---|---|
-| VGL | Project's named flow-partition labels; no expansion is asserted here. |
+| VGL | Partition labels use V = Vortical, G = Genesis, L = Lysis; see [part.md](part.md) for the 0–5 mapping. |
 | JPDF | Joint probability density function |
 | FA / FL | Frontal area / frontal line |
 | SD / VD | Strain dominated / vorticity dominated |
@@ -27,7 +27,7 @@ Cloud reference for Doc2 variables, algorithms, MATLAB implementations, and figu
 ## Reference documents
 
 - [vars.md](vars.md): strict variables, equations, units, and relationships.
-- [part.md](part.md): VGL names, criteria, and numeric identifiers; unverified mappings are marked.
+- [part.md](part.md): VGL meanings, the 0–5 label mapping, criteria, and mask semantics.
 - [jpdf.md](jpdf.md): λ-JPDF coordinates, binning, normalization, contours, and labels.
 - [field.md](field.md): parameter-field masks, value ranges, colorbars, and map display.
 - [front.md](front.md): frontal-area/ridge extraction and FL feature-direction arrows.
